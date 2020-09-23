@@ -1,3 +1,62 @@
+
+
+.navbar {
+
+        display: block;
+        position: absolute;
+        width: 100%;
+        animation: navbar_transition 2s ease-in-out;
+        z-index: 3;
+        font-size: 20px;
+        font-weight: normal;
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-top: 10%;
+        padding-top: 10%;}
+        
+
+
+
+
+
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,.1);
+}
+.navbar-nav > .nav-item {
+    padding: 0 30px !important;
+    transition-timing-function: ease-in;
+    transition: 0.2s;
+    
+}
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    background-color: black;
+    
+}
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: .25rem;
+}
+
+
+
+
+
 #herogrid{
 
    height: 100%;
@@ -6,6 +65,7 @@
     grid-template-columns:25% 75%;
     min-height: 800px;
     background-color: whitesmoke;
+    margin-top: 5%;
 
    
    
@@ -20,7 +80,7 @@
 }
 
 #slideright{
-    background-color:whitesmoke;
+    background-color:white;
    
     
    
@@ -28,29 +88,15 @@
 }
 
 
-.navbar a {
-    float: right;
 
-    color:black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    padding-right: 5%;
-    padding-top: 5%;
-    text-decoration: none;
-    
-  
-}
 
-h1{
+.contain h1{
    
     padding-left: 5%;
     padding-top: 15%;
     padding-right: 15%;
     text-align: justify;
-    font-weight: normal;
+    font-size: 24px;
     line-height: 1.6;
 
     
@@ -59,7 +105,7 @@ h1{
 
 }
 img{
-    padding-top:10%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,9 +124,23 @@ nav{
     
 }
 
-@media only screen and (max-width: 700){
-  
-  .navbar a{
+.copyright{
+    background-color: black;
+    height: 100%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    
 
-    display: none;}
-  }
+ }
+
+
+@media only screen and (max-width: 600){
+  
+    #slideleft{
+        flex-direction:column;}
+    img{
+    
+          display: none;
+        }
+    }
