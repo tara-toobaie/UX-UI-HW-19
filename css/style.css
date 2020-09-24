@@ -85,6 +85,8 @@ img{
 h1{
     font-size: 48px;
     font-weight: bold;
+    
+    padding-bottom: 2%;
   
  
 
@@ -93,6 +95,7 @@ h1{
 h2{
     font-size: 40px;
     font-weight: normal;
+    
     
 }
 #Nasa{
@@ -269,7 +272,7 @@ justify-content: center;
   
 
 .footer-icon img:hover{
-    width:30px;
+    width:35px;
 }
  hr{
 
